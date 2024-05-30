@@ -37,6 +37,14 @@ struct LeftChartButtonsView: View {
           Text("AREA")
         })
         Spacer()
+        Button(action: {
+          withAnimation {
+            chartItem.chartType = .pie
+          }
+        }, label: {
+          Text("PIE")
+        })
+        Spacer()
         ColorfulButtonView(chartItem: $chartItem, dim: 30, offset: 10) {}
       }
       .padding()

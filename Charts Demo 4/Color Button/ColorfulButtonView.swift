@@ -40,7 +40,7 @@ struct ColorfulButtonView: View {
   
     var body: some View {
       ZStack {
-        if chartItem.chartType == .bar {
+        if chartItem.chartType == .bar || chartItem.chartType == .pie {
           ForEach(0 ..< chartItem.barColors.count, id: \.self) { i in
             RandomArcFromColorListView(colors: chartItem.barColors,
                                        index: i,
@@ -66,7 +66,7 @@ struct ColorfulButtonView: View {
                z: 0.0)
       )
       .onTapGesture {
-        if chartItem.chartType == .bar {
+        if chartItem.chartType == .bar || chartItem.chartType == .pie  {
           chartItem.barColors = Color.randonColorsN(n: chartItem.barColors.count)
         } else {
           chartItem.lineAreaColor = Color.random(colorList: colorsForLineAndArea)

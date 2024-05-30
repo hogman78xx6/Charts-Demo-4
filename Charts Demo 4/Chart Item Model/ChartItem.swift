@@ -26,7 +26,7 @@ struct ChartItem: Identifiable {
   static let defaultChartItem: ChartItem = .init(
     dailySales: defaultDailySales,
     barColors: defaultBarColors,
-    editMode: true,
+    editMode: false,
     selectedDay: "Wed",
     min: 0,
     max: 1000,

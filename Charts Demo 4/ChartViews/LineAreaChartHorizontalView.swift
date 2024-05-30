@@ -1,5 +1,5 @@
 //
-//  LineChartHorizontalView.swift
+//  LineAreaChartHorizontalView.swift
 //  Charts Demo 3
 //
 //  Created by Michael Knych on 5/20/24.

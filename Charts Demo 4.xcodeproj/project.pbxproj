@@ -11,6 +11,32 @@
 		992007EF2C014D4000CD6CC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992007EE2C014D4000CD6CC8 /* ContentView.swift */; };
 		992007F12C014D4100CD6CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992007F02C014D4100CD6CC8 /* Assets.xcassets */; };
 		992007F52C014D4100CD6CC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992007F42C014D4100CD6CC8 /* Preview Assets.xcassets */; };
+		992008002C014E1000CD6CC8 /* Color Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992007FF2C014E1000CD6CC8 /* Color Extensions.swift */; };
+		992008042C014E2600CD6CC8 /* ColorfulButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008012C014E2600CD6CC8 /* ColorfulButtonView.swift */; };
+		992008052C014E2600CD6CC8 /* RandomArcFromColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008022C014E2600CD6CC8 /* RandomArcFromColorListView.swift */; };
+		992008062C014E2600CD6CC8 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008032C014E2600CD6CC8 /* ArcView.swift */; };
+		992008082C014E3600CD6CC8 /* Data File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008072C014E3600CD6CC8 /* Data File.swift */; };
+		992008142C014E8600CD6CC8 /* LineAreaChartHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008092C014E8600CD6CC8 /* LineAreaChartHorizontalView.swift */; };
+		992008152C014E8600CD6CC8 /* AreaChartHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080A2C014E8600CD6CC8 /* AreaChartHorizontalView.swift */; };
+		992008162C014E8600CD6CC8 /* SimpleTitleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080B2C014E8600CD6CC8 /* SimpleTitleButtonView.swift */; };
+		992008172C014E8600CD6CC8 /* LeftChartButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080C2C014E8600CD6CC8 /* LeftChartButtonsView.swift */; };
+		992008182C014E8600CD6CC8 /* LineAreaChartVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080D2C014E8600CD6CC8 /* LineAreaChartVerticalView.swift */; };
+		992008192C014E8600CD6CC8 /* BarChartVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080E2C014E8600CD6CC8 /* BarChartVerticalView.swift */; };
+		9920081A2C014E8600CD6CC8 /* RightChartButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920080F2C014E8600CD6CC8 /* RightChartButtonsView.swift */; };
+		9920081B2C014E8600CD6CC8 /* BarChartHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008102C014E8600CD6CC8 /* BarChartHorizontalView.swift */; };
+		9920081C2C014E8600CD6CC8 /* TitleAlignmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008112C014E8600CD6CC8 /* TitleAlignmentButton.swift */; };
+		9920081D2C014E8600CD6CC8 /* AreaChartVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008122C014E8600CD6CC8 /* AreaChartVerticalView.swift */; };
+		9920081E2C014E8600CD6CC8 /* RuleMarkForVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008132C014E8600CD6CC8 /* RuleMarkForVerticalView.swift */; };
+		992008202C014F1000CD6CC8 /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920081F2C014F1000CD6CC8 /* ChartItem.swift */; };
+		992008222C0154D100CD6CC8 /* RuleMarkForHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008212C0154D100CD6CC8 /* RuleMarkForHorizontalView.swift */; };
+		992008242C03B4E500CD6CC8 /* Annotate Line Area Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008232C03B4E500CD6CC8 /* Annotate Line Area Graph.swift */; };
+		992008262C03B87B00CD6CC8 /* ChartDragForHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008252C03B87B00CD6CC8 /* ChartDragForHorizontalView.swift */; };
+		992008282C03BEE600CD6CC8 /* ChartDragForVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008272C03BEE600CD6CC8 /* ChartDragForVerticalView.swift */; };
+		9920082B2C041EA800CD6CC8 /* MainViewWithTitleAndBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920082A2C041EA800CD6CC8 /* MainViewWithTitleAndBorder.swift */; };
+		9920082D2C04FB5E00CD6CC8 /* Default Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920082C2C04FB5E00CD6CC8 /* Default Colors.swift */; };
+		992008332C05357300CD6CC8 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992008322C05357300CD6CC8 /* PieChartView.swift */; };
+		99DEEB382C08060600AC3213 /* ChartEditForPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEEB372C08060600AC3213 /* ChartEditForPieChartView.swift */; };
+		99DEEB3A2C08C62C00AC3213 /* ChartDragForPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DEEB392C08C62C00AC3213 /* ChartDragForPieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +46,32 @@
 		992007F02C014D4100CD6CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992007F22C014D4100CD6CC8 /* Charts_Demo_4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Charts_Demo_4.entitlements; sourceTree = "<group>"; };
 		992007F42C014D4100CD6CC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		992007FF2C014E1000CD6CC8 /* Color Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color Extensions.swift"; sourceTree = "<group>"; };
+		992008012C014E2600CD6CC8 /* ColorfulButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorfulButtonView.swift; sourceTree = "<group>"; };
+		992008022C014E2600CD6CC8 /* RandomArcFromColorListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomArcFromColorListView.swift; sourceTree = "<group>"; };
+		992008032C014E2600CD6CC8 /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		992008072C014E3600CD6CC8 /* Data File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data File.swift"; sourceTree = "<group>"; };
+		992008092C014E8600CD6CC8 /* LineAreaChartHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineAreaChartHorizontalView.swift; sourceTree = "<group>"; };
+		9920080A2C014E8600CD6CC8 /* AreaChartHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaChartHorizontalView.swift; sourceTree = "<group>"; };
+		9920080B2C014E8600CD6CC8 /* SimpleTitleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTitleButtonView.swift; sourceTree = "<group>"; };
+		9920080C2C014E8600CD6CC8 /* LeftChartButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftChartButtonsView.swift; sourceTree = "<group>"; };
+		9920080D2C014E8600CD6CC8 /* LineAreaChartVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineAreaChartVerticalView.swift; sourceTree = "<group>"; };
+		9920080E2C014E8600CD6CC8 /* BarChartVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartVerticalView.swift; sourceTree = "<group>"; };
+		9920080F2C014E8600CD6CC8 /* RightChartButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightChartButtonsView.swift; sourceTree = "<group>"; };
+		992008102C014E8600CD6CC8 /* BarChartHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartHorizontalView.swift; sourceTree = "<group>"; };
+		992008112C014E8600CD6CC8 /* TitleAlignmentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleAlignmentButton.swift; sourceTree = "<group>"; };
+		992008122C014E8600CD6CC8 /* AreaChartVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaChartVerticalView.swift; sourceTree = "<group>"; };
+		992008132C014E8600CD6CC8 /* RuleMarkForVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleMarkForVerticalView.swift; sourceTree = "<group>"; };
+		9920081F2C014F1000CD6CC8 /* ChartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
+		992008212C0154D100CD6CC8 /* RuleMarkForHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMarkForHorizontalView.swift; sourceTree = "<group>"; };
+		992008232C03B4E500CD6CC8 /* Annotate Line Area Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Annotate Line Area Graph.swift"; sourceTree = "<group>"; };
+		992008252C03B87B00CD6CC8 /* ChartDragForHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDragForHorizontalView.swift; sourceTree = "<group>"; };
+		992008272C03BEE600CD6CC8 /* ChartDragForVerticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDragForVerticalView.swift; sourceTree = "<group>"; };
+		9920082A2C041EA800CD6CC8 /* MainViewWithTitleAndBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewWithTitleAndBorder.swift; sourceTree = "<group>"; };
+		9920082C2C04FB5E00CD6CC8 /* Default Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Default Colors.swift"; sourceTree = "<group>"; };
+		992008322C05357300CD6CC8 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		99DEEB372C08060600AC3213 /* ChartEditForPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEditForPieChartView.swift; sourceTree = "<group>"; };
+		99DEEB392C08C62C00AC3213 /* ChartDragForPieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDragForPieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +104,15 @@
 		992007EB2C014D4000CD6CC8 /* Charts Demo 4 */ = {
 			isa = PBXGroup;
 			children = (
-				992007EC2C014D4000CD6CC8 /* Charts_Demo_4App.swift */,
-				992007EE2C014D4000CD6CC8 /* ContentView.swift */,
+				992008292C041DE500CD6CC8 /* Main Views */,
+				992007FE2C014D9700CD6CC8 /* ChartViews */,
+				9920082E2C04FCB100CD6CC8 /* Buttons */,
+				992007FC2C014D7600CD6CC8 /* Color Button */,
+				992008312C052C8F00CD6CC8 /* RuleMark Views */,
+				992008302C04FDA300CD6CC8 /* Default Values */,
+				9920082F2C04FD4C00CD6CC8 /* Chart Item Model */,
+				992007FB2C014D6700CD6CC8 /* Extensions */,
+				992007FD2C014D8600CD6CC8 /* Data */,
 				992007F02C014D4100CD6CC8 /* Assets.xcassets */,
 				992007F22C014D4100CD6CC8 /* Charts_Demo_4.entitlements */,
 				992007F32C014D4100CD6CC8 /* Preview Content */,
@@ -67,6 +126,97 @@
 				992007F42C014D4100CD6CC8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		992007FB2C014D6700CD6CC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				992007FF2C014E1000CD6CC8 /* Color Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		992007FC2C014D7600CD6CC8 /* Color Button */ = {
+			isa = PBXGroup;
+			children = (
+				992008032C014E2600CD6CC8 /* ArcView.swift */,
+				992008012C014E2600CD6CC8 /* ColorfulButtonView.swift */,
+				992008022C014E2600CD6CC8 /* RandomArcFromColorListView.swift */,
+			);
+			path = "Color Button";
+			sourceTree = "<group>";
+		};
+		992007FD2C014D8600CD6CC8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				992008072C014E3600CD6CC8 /* Data File.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		992007FE2C014D9700CD6CC8 /* ChartViews */ = {
+			isa = PBXGroup;
+			children = (
+				9920080A2C014E8600CD6CC8 /* AreaChartHorizontalView.swift */,
+				992008122C014E8600CD6CC8 /* AreaChartVerticalView.swift */,
+				992008102C014E8600CD6CC8 /* BarChartHorizontalView.swift */,
+				9920080E2C014E8600CD6CC8 /* BarChartVerticalView.swift */,
+				992008092C014E8600CD6CC8 /* LineAreaChartHorizontalView.swift */,
+				9920080D2C014E8600CD6CC8 /* LineAreaChartVerticalView.swift */,
+				992008232C03B4E500CD6CC8 /* Annotate Line Area Graph.swift */,
+				992008252C03B87B00CD6CC8 /* ChartDragForHorizontalView.swift */,
+				992008272C03BEE600CD6CC8 /* ChartDragForVerticalView.swift */,
+				992008322C05357300CD6CC8 /* PieChartView.swift */,
+				99DEEB372C08060600AC3213 /* ChartEditForPieChartView.swift */,
+				99DEEB392C08C62C00AC3213 /* ChartDragForPieView.swift */,
+			);
+			path = ChartViews;
+			sourceTree = "<group>";
+		};
+		992008292C041DE500CD6CC8 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				992007EC2C014D4000CD6CC8 /* Charts_Demo_4App.swift */,
+				992007EE2C014D4000CD6CC8 /* ContentView.swift */,
+				9920082A2C041EA800CD6CC8 /* MainViewWithTitleAndBorder.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		9920082E2C04FCB100CD6CC8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				9920080B2C014E8600CD6CC8 /* SimpleTitleButtonView.swift */,
+				992008112C014E8600CD6CC8 /* TitleAlignmentButton.swift */,
+				9920080F2C014E8600CD6CC8 /* RightChartButtonsView.swift */,
+				9920080C2C014E8600CD6CC8 /* LeftChartButtonsView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		9920082F2C04FD4C00CD6CC8 /* Chart Item Model */ = {
+			isa = PBXGroup;
+			children = (
+				9920081F2C014F1000CD6CC8 /* ChartItem.swift */,
+			);
+			path = "Chart Item Model";
+			sourceTree = "<group>";
+		};
+		992008302C04FDA300CD6CC8 /* Default Values */ = {
+			isa = PBXGroup;
+			children = (
+				9920082C2C04FB5E00CD6CC8 /* Default Colors.swift */,
+			);
+			path = "Default Values";
+			sourceTree = "<group>";
+		};
+		992008312C052C8F00CD6CC8 /* RuleMark Views */ = {
+			isa = PBXGroup;
+			children = (
+				992008212C0154D100CD6CC8 /* RuleMarkForHorizontalView.swift */,
+				992008132C014E8600CD6CC8 /* RuleMarkForVerticalView.swift */,
+			);
+			path = "RuleMark Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +289,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992008192C014E8600CD6CC8 /* BarChartVerticalView.swift in Sources */,
+				992008042C014E2600CD6CC8 /* ColorfulButtonView.swift in Sources */,
+				992008332C05357300CD6CC8 /* PieChartView.swift in Sources */,
+				992008202C014F1000CD6CC8 /* ChartItem.swift in Sources */,
+				9920081C2C014E8600CD6CC8 /* TitleAlignmentButton.swift in Sources */,
+				992008172C014E8600CD6CC8 /* LeftChartButtonsView.swift in Sources */,
+				992008222C0154D100CD6CC8 /* RuleMarkForHorizontalView.swift in Sources */,
+				99DEEB382C08060600AC3213 /* ChartEditForPieChartView.swift in Sources */,
+				99DEEB3A2C08C62C00AC3213 /* ChartDragForPieView.swift in Sources */,
+				992008162C014E8600CD6CC8 /* SimpleTitleButtonView.swift in Sources */,
+				992008242C03B4E500CD6CC8 /* Annotate Line Area Graph.swift in Sources */,
+				992008052C014E2600CD6CC8 /* RandomArcFromColorListView.swift in Sources */,
+				992008152C014E8600CD6CC8 /* AreaChartHorizontalView.swift in Sources */,
 				992007EF2C014D4000CD6CC8 /* ContentView.swift in Sources */,
+				992008082C014E3600CD6CC8 /* Data File.swift in Sources */,
+				9920082B2C041EA800CD6CC8 /* MainViewWithTitleAndBorder.swift in Sources */,
+				992008062C014E2600CD6CC8 /* ArcView.swift in Sources */,
 				992007ED2C014D4000CD6CC8 /* Charts_Demo_4App.swift in Sources */,
+				9920082D2C04FB5E00CD6CC8 /* Default Colors.swift in Sources */,
+				992008182C014E8600CD6CC8 /* LineAreaChartVerticalView.swift in Sources */,
+				992008002C014E1000CD6CC8 /* Color Extensions.swift in Sources */,
+				9920081E2C014E8600CD6CC8 /* RuleMarkForVerticalView.swift in Sources */,
+				9920081B2C014E8600CD6CC8 /* BarChartHorizontalView.swift in Sources */,
+				9920081A2C014E8600CD6CC8 /* RightChartButtonsView.swift in Sources */,
+				9920081D2C014E8600CD6CC8 /* AreaChartVerticalView.swift in Sources */,
+				992008262C03B87B00CD6CC8 /* ChartDragForHorizontalView.swift in Sources */,
+				992008282C03BEE600CD6CC8 /* ChartDragForVerticalView.swift in Sources */,
+				992008142C014E8600CD6CC8 /* LineAreaChartHorizontalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +458,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -320,8 +496,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

@@ -9,83 +9,41 @@ import SwiftUI
 import Charts
 
 enum ChartType {
-  case bar, line, area
+  case bar, line, area, pie
 }
 
 struct ContentView: View {
-  @State var chartItem: ChartItem = .defaultChartItem
+  @Binding var chartItem: ChartItem
   
   let xAxisMarkPosition: AxisMarkPosition = .bottom
   let yAxisMarkPosition: AxisMarkPosition = .leading
   
   var body: some View {
-    VStack {
-      HStack {
-        Button(action: {
-          withAnimation {
-            chartItem.editMode.toggle()
-          }
-          
-        }, label: {
-          Image(systemName: chartItem.editMode ? "checkmark" : "square.and.pencil")
-        })
-        if !chartItem.editMode {
-          Spacer()
-          Button(action: {
-            withAnimation {
-              // TODO: Sharing
-            }
-            
-          }, label: {
-            Image(systemName: "square.and.arrow.up")
-          })
-        }
+    // ------- The chart ---------------------
+    if chartItem.isVerticalChart {
+      switch(chartItem.chartType) {
+      case .bar:
+        BarChartVerticalView(chartItem: $chartItem)
+      case .line, .area:
+        LineAreaChartVerticalView(chartItem: $chartItem)
+      case .pie:
+        PieChartView(chartItem: $chartItem)
       }
-      
-      HStack {
-        // ----- Left Chart Buttons ---------------------
-        if chartItem.editMode  {
-          LeftChartButtonsView(chartItem: $chartItem)
-        }
-        
-        // ---   The Title and Chart --------------------
-        VStack(alignment: chartItem.titleAligment) {
-          Text(chartItem.title)
-            .font(.headline)
-            .fontWeight(.semibold)
-            .padding(.vertical)
-          // ------- The chart ---------------------
-          if chartItem.isVerticalChart {
-            switch(chartItem.chartType) {
-            case .bar:
-              BarChartVerticalView(chartItem: $chartItem)
-            case .line, .area:
-              LineAreaChartVerticalView(chartItem: $chartItem)
-            }
-          } else {
-            switch(chartItem.chartType) {
-            case .bar:
-              BarChartHorizontalView(chartItem: $chartItem)
-            case .line, .area:
-              LineAreaChartHorizontalView(chartItem: $chartItem)
-            }
-          }
-        }
-        
-        // ----- Right Chart Button ------------------------
-        if chartItem.editMode  {
-          RightChartButtonsView(chartItem: $chartItem)
-        }
-        
+    } else {
+      switch(chartItem.chartType) {
+      case .bar:
+        BarChartHorizontalView(chartItem: $chartItem)
+      case .line, .area:
+        LineAreaChartHorizontalView(chartItem: $chartItem)
+      case .pie:
+        PieChartView(chartItem: $chartItem)
       }
-      
-    }  // end of vstack
-    .padding()
+    }
   }
 }
 
 #Preview(traits: .landscapeRight) {
-  ContentView()
+  ContentView(chartItem: .constant(.defaultChartItem))
 }
 
 

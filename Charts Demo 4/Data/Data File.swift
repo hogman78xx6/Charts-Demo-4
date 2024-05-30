@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct DailySalesType: Identifiable {
+struct DailySalesType: Identifiable, Equatable {
   let id = UUID()
   let day: String
   let sales: Double

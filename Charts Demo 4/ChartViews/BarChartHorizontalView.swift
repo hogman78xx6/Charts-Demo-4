@@ -9,20 +9,44 @@ import SwiftUI
 import Charts
 
 struct BarChartHorizontalView: View {
-  let dailySales: [DailySalesType]
-  let barColors: [Color]
+  @Binding var chartItem: ChartItem
+
+  var min: Double {
+    chartItem.min
+  }
+  
+  var max: Double {
+    chartItem.max
+  }
+  
+  // Dragging related properties
+  @State var isDragging: Bool = false
+  
+  var salesOnSelectedDay: Double {
+    getSalesOfSelectedDay(dailySales: chartItem.dailySales,
+                          selectedDay: chartItem.selectedDay
+    )
+  }
+  
   var body: some View {
     Chart {
-      ForEach(dailySales) { item in
+      if isDragging {
+        RuleMarkForHorizontalView(chartItem: chartItem, salesOnSelectedDay: salesOnSelectedDay)
+      }
+      
+      ForEach(chartItem.dailySales) { item in
         BarMark(x: .value("Sales", item.sales),
                  y: .value("Day", item.day))
         .foregroundStyle(by: .value("Day", item.day))
       }
     }
-    .chartForegroundStyleScale(range: barColors)
+    .chartForegroundStyleScale(range: chartItem.barColors)
+    .chartXScale(domain: min...max)
+    // chart item dragging logic
+    .modifier(ChartDragForHorizontalView(chartItem: $chartItem, isDragging: $isDragging))
   }
 }
 
 #Preview {
-  BarChartHorizontalView(dailySales: defaultDailySales, barColors: defaultBarColors)
+  BarChartHorizontalView(chartItem: .constant(.defaultChartItem))
 }

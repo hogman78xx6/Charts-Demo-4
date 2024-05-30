@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct Annotate_Line_Area_Graph: View {
+  let chartItem: ChartItem
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      VStack {
+        if chartItem.editMode {
+          Image(systemName: "square.and.pencil")
+            .foregroundStyle(chartItem.lineAreaColor)
+            .padding(3)
+            .background(
+            RoundedRectangle(cornerRadius: 5)
+              .stroke(chartItem.lineAreaColor)
+            )
+            .opacity(0.7)
+        } else {
+          Circle()
+            .fill(chartItem.lineAreaColor)
+            .frame(width: 7, height: 7)
+        }
+      }
     }
 }
 
 #Preview {
-    Annotate_Line_Area_Graph()
+  Annotate_Line_Area_Graph(chartItem: .defaultChartItem)
 }

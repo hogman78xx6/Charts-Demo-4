@@ -10,11 +10,6 @@ import SwiftUI
 struct RightChartButtonsView: View {
   @Binding var chartItem: ChartItem
   
-//  @Binding var barColors: [Color]
-//  @Binding var chartType: ChartType
-//  @Binding var isVerticalChart: Bool
-//  @Binding var titleAligment: HorizontalAlignment
-  
   var body: some View {
     VStack(spacing: 50) {
       Button(action: {

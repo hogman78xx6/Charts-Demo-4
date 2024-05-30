@@ -8,8 +8,6 @@
 import SwiftUI
 import Charts 
 
-
-
 struct BarChartVerticalView: View {
   @Binding var chartItem: ChartItem
 
@@ -23,7 +21,6 @@ struct BarChartVerticalView: View {
   
   
   // Dragging related properties
-  let innerProxyColor: Color = .black.opacity(0.2)
   @State var isDragging: Bool = false
   
   var salesOnSelectedDay: Double {
@@ -38,8 +35,9 @@ struct BarChartVerticalView: View {
       // this will have the RuleMArk show behind the chart
       // (i.e., the chart will be placed on top of the RuleMArk
       if isDragging {
-        RuleMarkView(selectedDay: chartItem.selectedDay, salesOnSelectedDay: salesOnSelectedDay, intMode: true)
+        RuleMarkForVerticalView(chartItem: chartItem, salesOnSelectedDay: salesOnSelectedDay)
       }
+      
       ForEach(chartItem.dailySales) { item in
         BarMark(x: .value("Day", item.day),
                  y: .value("Sales", item.sales))
@@ -58,36 +56,8 @@ struct BarChartVerticalView: View {
     }
     .chartForegroundStyleScale(range: chartItem.barColors)
     .chartYScale(domain: min...max)
-    .chartOverlay { proxy in
-      GeometryReader {
-        innerProxy in
-        Rectangle()
-          .fill(innerProxyColor)
-          .contentShape(Rectangle())
-          .gesture(
-            DragGesture()
-              .onChanged({ value in
-                if chartItem.editMode {
-                  isDragging = true
-                  let location = value.location
-                  // the compiler forced me to add .self
-                  let (newDay, sales) = proxy.value(at: location, as: (String, Double).self) ?? ("error", -1)
-                  
-                  print(newDay)
-                  print(sales)
-                  
-                  // Update selected day
-                  chartItem.selectedDay = newDay
-                  
-                  setSalesOfSelectedDay(dailySales: &chartItem.dailySales, selectedDay: chartItem.selectedDay, sales: sales, min: min, max: max)
-                }
-              })
-              .onEnded({ value in
-                  isDragging = false
-              })
-          )
-      }
-    }
+    // chart item dragging logic
+    .modifier(ChartDragForVerticalView(chartItem: $chartItem, isDragging: $isDragging))
   }
 }
 
