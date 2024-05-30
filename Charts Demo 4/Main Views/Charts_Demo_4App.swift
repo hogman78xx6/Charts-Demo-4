@@ -11,7 +11,7 @@ import SwiftUI
 struct Charts_Demo_4App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          MainViewWithTitleAndBorder()
         }
     }
 }
